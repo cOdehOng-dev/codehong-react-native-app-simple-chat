@@ -44,6 +44,9 @@ const StyledTextInput = forwardRef(({
   secureTextEntry,
   returnKeyType,
   maxLength,
+  autoCapitalize,
+  autoCorrect,
+  textContentType,
 }, ref) => {
   const theme = useContext(ThemeContext);
   return (
@@ -58,6 +61,9 @@ const StyledTextInput = forwardRef(({
       secureTextEntry={secureTextEntry}
       returnKeyType={returnKeyType}
       maxLength={maxLength}
+      autoCapitalize={autoCapitalize}
+      autoCorrect={autoCorrect}
+      textContentType={textContentType}
       placeholderTextColor={theme.inputPlaceholder}
       style={{
         backgroundColor: theme.inputBackground,
